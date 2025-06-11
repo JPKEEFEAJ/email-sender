@@ -11,7 +11,7 @@ emailjs.init({
 
 export function App() {
   return (
-    <button id="servant-button" type="button" onClick={requestServant.bind(this)}>Request Servant</button>
+    <button id="coffee-button" type="button" onClick={requestCoffee.bind(this)}>Coffee Please</button>
   );
 }
 
@@ -19,13 +19,13 @@ var templateParams = {
   name: 'Test IDK',
 };
 
-function requestServant() {
+function requestCoffee() {
   emailjs.send('service_97hva5e', 'template_vjod5bc', templateParams).then(
     (response) => {
       console.log('SUCCESS!', response.status, response.text);
     },
     (error) => {
-      alert(`Servant Request failed to send. Error: ${error}`);
+      alert(`Coffee Request failed to send. Error: ${error}`);
     },
   );
 }
