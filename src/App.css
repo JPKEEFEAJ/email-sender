@@ -1,3 +1,7 @@
+* {
+    font-family: 'Fuzzy Bubbles';
+}
+
 /* Stolen with <3 from Uiverse.io by Madflows */ 
 button {
  position: relative;
@@ -6,7 +10,6 @@ button {
  outline: none;
  border: 0;
  text-decoration: none;
- font-family: 'Fuzzy Bubbles';
  font-size: 2.25em;
  margin: 10px;
 }
@@ -66,4 +69,20 @@ button {
  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
  -webkit-transform: translate3d(0, 0, -1em);
  transform: translate3d(0, 0, -1em);
+}
+
+
+select {
+ font-weight: 800;
+ color: #382b22;
+ padding: .5em .75em;
+ background: #fff0f0;
+ border: 2px solid #b18597;
+ border-radius: 0.75em;
+ font-size: 1.75em;
+ cursor: pointer;
+}
+
+label {
+ font-size: 1.25em;
 }
